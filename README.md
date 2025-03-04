@@ -448,3 +448,34 @@ mv laba/prometheus.yaml ./
 
 ## Задание 5
 
+```bash
+sudo mv prometheus.yaml /mnt/common_volume/swarm/grafana/config/
+```
+
+- sudo - команда для выполнения операции с правами суперпользователя (администратора)
+- mv - команда для перемещения или переименования файлов
+- prometeus.yaml - имя файла, который будет перемещен (вероятно, опечатка, должно быть prometheus.yaml)
+- /mnt/common_volume/swarm/grafana/config/ - целевая директория, куда будет перемещен файл
+
+Эта команда перемещает файл `prometheus.yaml` из текущей директории в `/mnt/common_volume/swarm/grafana/config/`. Перемещение выполняется с правами суперпользователя, так как путь требует соответствующих привилегий для записи (рис. 1). Делаем бэкап фала `prometheus.yaml` (`prometheus(copy).yaml`) который находится в `/mnt/common_volume/swarm/grafana/config/` (рис. 2).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/0d515f38-4d84-4d27-b92d-b128022a75fd" alt="" width="1000">
+   <p>Рисунок 1 - Бэкап и prometheus.yaml</p>
+</div>
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/72409be9-9361-4b5b-b134-71b99a2a8284" alt="" width="1000">
+   <p>Рисунок 2 - Бэкап и prometheus.yaml</p>
+</div>
+
+Зашёл в Grafana по адресу: `localhost:3000`, и вписал данные (рис. 3):
+- Логин: admin
+- Пароль: admin
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/4d859c9d-bef7-473a-bf16-8c86f4f3dc6b" alt="" width="1000">
+   <p>Рисунок 3 - Grafana</p>
+</div>
+
+Создал новый Dashboard следующими шагами: Dashboards -> New Dashboards -> Import dashboard -> (...)
