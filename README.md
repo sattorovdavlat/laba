@@ -478,4 +478,9 @@ sudo mv prometheus.yaml /mnt/common_volume/swarm/grafana/config/
    <p>Рисунок 3 - Grafana</p>
 </div>
 
-Создал новый Dashboard следующими шагами: Dashboards -> New Dashboards -> Import dashboard -> (...)
+Создал новый Dashboard следующими шагами: Dashboards -> New Dashboards -> Import dashboard -> Вписываем ID 1860 -> Создаём новый Prometheus data source -> Вписываем данные: http://prometheus:9090 и выбираем basic authentication -> Повторно нажимаем Import dashboard -> Повторно вписываем 1860 -> Выбираем созданную дату (рис. 4).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/727f43ac-3461-4594-838a-44db2c0aaf94" alt="" width="1000">
+   <p>Рисунок 4 - Grafana dashboard</p>
+</div>
