@@ -400,3 +400,51 @@ sudo docker compose ps
    <p>Рисунок 4 - Список контейнеров</p>
 </div>
 
+```bash
+git clone https://github.com/sattorovdavlat/laba.git
+```
+
+- git - команда для работы с системой контроля версий Git
+- clone - параметр git, используемый для клонирования (скачивания) репозитория с удаленного сервера на локальную машину
+- https://github.com/sattorovdavlat/laba.git - URL репозитория GitHub, который будет склонирован
+
+Эта команда создает локальную копию репозитория `laba` с GitHub, скачивая все его файлы и историю изменений в текущую директорию. После выполнения команды появится новая директория `laba`, содержащая содержимое репозитория (рис. 5).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/5a347c88-a9b1-4ac4-88b8-b3b3d98d086b" alt="" width="1000">
+   <p>Рисунок 5 - Папка из репозитория</p>
+</div>
+
+```bash
+pwd
+```
+
+- pwd - команда для вывода текущего рабочего каталога (print working directory)
+
+Эта команда показывает полный путь к текущей директории, в которой вы находитесь в терминале (рис. 6).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/2e017fd4-2c1b-440a-ac6a-94c88058f6c7" alt="" width="1000">
+   <p>Рисунок 6 - Полный путь</p>
+</div>
+
+```bash
+mv laba/docker-compose.yaml ./
+mv laba/prometheus.yaml ./
+```
+
+- mv - команда для переименования или перемещения файлов и директорий
+- laba/docker-compose.yaml - путь к файлу docker-compose.yaml в директории laba, который будет перемещен
+- ./ - текущая рабочая директория, куда перемещается файл
+- laba/prometheus.yaml - путь к файлу prometheus.yaml в директории laba, который также будет перемещен
+- ./ - текущая рабочая директория, куда перемещается второй файл
+
+Эти команды перемещают файлы `docker-compose.yaml` и `prometheus.yaml` из директории `laba` в текущую рабочую директорию (`./`). После выполнения этих команд указанные файлы окажутся в той директории, из которой была выполнена команда. Сделал бэкап `docker-compose.yaml` (рис. 7).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/fcd087ad-1c89-4f4c-b428-3f2b3b4ddd30" alt="" width="1000">
+   <p>Рисунок 7 - docker-compose и prometheus</p>
+</div>
+
+## Задание 5
+
