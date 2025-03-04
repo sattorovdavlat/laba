@@ -41,3 +41,89 @@ sudo yum install wget
 
 ## Задание 2
 
+```bash
+sudo yum install curl
+```
+
+- sudo - команда для выполнения операции с правами суперпользователя (администратора)
+
+- yum - система управления пакетами в дистрибутивах на базе Red Hat (например, CentOS, RHEL)
+
+- install - параметр yum, указывающий на установку нового программного пакета
+
+- curl - название пакета, который будет установлен (утилита для передачи данных с сервера на клиент и обратно через различные протоколы)
+
+Скачал успешно `curl` (рис. 1).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/aad9362a-6f60-4620-bcb3-ad6d2db035e6" alt="" width="500">
+   <p>Рисунок 1 - curl</p>
+</div>
+
+```bash
+sudo wget -P /etc/yum.repos.d/ https://download.docker.com/linux/centos/docker-ce.repo
+```
+
+- sudo - команда для выполнения операции с правами суперпользователя (администратора)
+
+- wget - утилита для загрузки файлов с сетей HTTP/HTTPS
+
+- -P - параметр wget, указывающий директорию для сохранения загруженного файла
+
+- /etc/yum.repos.d/ - целевая директория, куда будет сохранён загруженный файл (репозиторий для системы управления пакетами)
+
+- `https://download.docker.com/linux/centos/docker-ce.repo` - URL-адрес файла репозитория Docker, который будет загружен
+
+Успешно скачал файл Docker (рис. 2).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/cfd803d1-5a7a-4093-9300-bde6cc4ad10c" alt="" width="500">
+   <p>Рисунок 2 - Docker</p>
+</div>
+
+```bash
+sudo yum install docker-ce docker-ce-cli containerd.io
+```
+
+- sudo - команда для выполнения операции с правами суперпользователя (администратора)
+
+- yum - система управления пакетами в дистрибутивах на базе Red Hat (например, CentOS, RHEL)
+
+- install - параметр yum, указывающий на установку новых программных пакетов
+
+- docker-ce - основной пакет Docker Community Edition (бесплатная версия Docker)
+
+- docker-ce-cli - пакет, содержащий командную строку клиента Docker
+
+- containerd.io - пакет службы containerd, которая является низкоуровневой системой управления контейнерами, используемой Docker
+
+Эта команда устанавливает три ключевых компонента Docker: сам Docker (Community Edition), его командную строку и службу containerd, необходимую для работы с контейнерами (рис. 3).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/f70352c5-67b6-4396-812f-447fd7f76be9" alt="" width="500">
+   <p>Рисунок 3 - Компоненты Docker</p>
+</div>
+
+```bash
+sudo systemctl enable docker --now
+```
+
+- sudo - команда для выполнения операции с правами суперпользователя (администратора)
+
+- systemctl - утилита для управления системными службами (демонами) в Linux
+
+- enable - параметр systemctl, который включает службу для автоматического запуска при старте системы
+
+- docker - название службы, которую необходимо включить (демон Docker)
+
+- --now - параметр, указывающий на немедленный запуск службы, помимо её включения при загрузке системы
+
+Эта команда включает службу Docker для автозапуска при старте системы и сразу запускает её в текущий момент (рис. 4).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/3a082508-e11d-4c8d-922f-d67405c5455f" alt="" width="500">
+   <p>Рисунок 4 - Автозапуск</p>
+</div>
+
+## Задание 3
+
