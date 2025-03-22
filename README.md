@@ -484,3 +484,12 @@ sudo mv prometheus.yaml /mnt/common_volume/swarm/grafana/config/
    <img src="https://github.com/user-attachments/assets/727f43ac-3461-4594-838a-44db2c0aaf94" alt="" width="1000">
    <p>Рисунок 4 - Grafana dashboard</p>
 </div>
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/0bdf1f33-725f-4539-b80a-2a841ef9ad22" alt="" width="1000">
+   <p>Рисунок 1 - ...</p>
+</div>
+
+
+![изображение](https://github.com/user-attachments/assets/b354b29b-c638-4d5b-97ba-5f4c90e42e1e)
+
