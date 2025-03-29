@@ -485,11 +485,30 @@ sudo mv prometheus.yaml /mnt/common_volume/swarm/grafana/config/
    <p>Рисунок 4 - Grafana dashboard</p>
 </div>
 
+## Задание 6
+
+Создал новый источник данных (data source), с другой ссылкой `http://http//:victoriametrics:8428`. (рис. 1).
+
 <div align="center">
-   <img src="https://github.com/user-attachments/assets/0bdf1f33-725f-4539-b80a-2a841ef9ad22" alt="" width="1000">
-   <p>Рисунок 1 - ...</p>
+   <img src="https://github.com/user-attachments/assets/43fa5994-b6ea-41cd-93ce-e39e754a16d9" alt="" width="1000">
+   <p> Рисунок 1 - Виктория Метрик</p>
 </div>
 
+Прописал следующую команду и создал новую dashboard и получил значение 0 (рис. 2)
 
-![изображение](https://github.com/user-attachments/assets/b354b29b-c638-4d5b-97ba-5f4c90e42e1e)
+```
+echo -e "# TYPE light_metric1 gauge\nlight_metric1 0" | curl --data-binary @- http://localhost:8428/api/v1/import/prometheus
+```
 
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/d666b6c9-27c7-4695-a0a0-dd07a057c891" alt="" width="1000">
+   <p>Рисунок 2 - Dashboard</p>
+</div>
+
+После чего вписал уже в ту команду свои данные, за место 0. Связал график, с отметкой 0 и моими отметками, и сохранил Dashboard (рис. 3).
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/365105ad-66c6-4766-b4da-a41d1063f735" alt="" width="1000">
+   <img src="https://github.com/user-attachments/assets/d25aaa86-d222-4252-bf51-3121e1ffccc0" alt="" width="1000">
+   <p>Рисунок 3 - Сохранение Dashboard</p>
+</div>
